@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container" style="margin-top:60px;">
+        <h1 class="text-center" style="margin:20px 0;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Login</h1>
+        <form action="" method="post">
+            <div class="row form-group">
+                <label for=""class="col-sm-3 col-form-label"style="font-size:18px; font-family: 'Times New Roman', Times, serif;">Username</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control"name="" id="user">
+                </div>
+            </div>
+            <div class="row form-group">
+                <label for=""class="col-sm-3 col-form-label" style="font-size:18px; font-family: 'Times New Roman', Times, serif;">Password</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control"name="" id="pass">
+                </div>
+            </div>
+            <button id="login" class="btn btn-success">Log in</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        function id(e){
+            return document.getElementById(e)
+        }
+        id('login').addEventListener('click',function(e){
+            e.preventDefault()
+            if(id('user').value=='admin'&&id('pass').value=='123'){
+                window.location='home.html'
+            }else{
+                alert('salah user atau password')
+            }
+            
+        })
+    </script>
+
+</body>
+</html>
